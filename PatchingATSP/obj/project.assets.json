@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\catan\\OneDrive\\Desktop\\Implementazione Tesi\\PatchingATSP\\PatchingATSP.csproj",
+      "projectUniqueName": "C:\\Users\\catan\\OneDrive\\Desktop\\tesi\\Tesi\\PatchingATSP\\PatchingATSP.csproj",
       "projectName": "PatchingATSP",
-      "projectPath": "C:\\Users\\catan\\OneDrive\\Desktop\\Implementazione Tesi\\PatchingATSP\\PatchingATSP.csproj",
+      "projectPath": "C:\\Users\\catan\\OneDrive\\Desktop\\tesi\\Tesi\\PatchingATSP\\PatchingATSP.csproj",
       "packagesPath": "C:\\Users\\catan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\catan\\OneDrive\\Desktop\\Implementazione Tesi\\PatchingATSP\\obj\\",
+      "outputPath": "C:\\Users\\catan\\OneDrive\\Desktop\\tesi\\Tesi\\PatchingATSP\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\catan\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PatchingATSP")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5ce01825688d35441b3eb503b3e4d22828ed6124")]
 [assembly: System.Reflection.AssemblyProductAttribute("PatchingATSP")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PatchingATSP")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -8,7 +8,7 @@ using System.Security.AccessControl;
 
 namespace PatchingATSP
 {
-    public class SolveATSPPatchCplex
+    public class SolveAPCplex
     {
         public static double solve(int n, double[][] m)
         {
@@ -73,25 +73,9 @@ namespace PatchingATSP
                         }
                         cplex.AddEq(exp, 1);
                     }
-                    //eliminazione dei sottocicli
-                    for (int i = 1; i < n; i++)
-                    {
-                        for (int j = 1; j < n; j++)
-                        {
-                            if (i != j)
-                            {
-                                ILinearNumExpr exp = cplex.LinearNumExpr();
-                                exp.AddTerm(1, u[i]);
-                                exp.AddTerm(-1, u[j]);
-                                exp.AddTerm(n - 1, x[i][j]);
-                                cplex.AddLe(exp, n - 2);
-                            }
-                        }
-                    }
-
 
                     cplex.SetParam(Cplex.Param.MIP.Strategy.Search, (int)Cplex.MIPSearch.Traditional); //heuristic
-                    
+
                     if (cplex.Solve())
                     {
 
@@ -116,6 +100,7 @@ namespace PatchingATSP
                         return cplex.ObjValue;
 
                     }
+
                     return 0;
                 }
             }

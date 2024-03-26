@@ -25,7 +25,7 @@ namespace PatchingATSP
                     }
                     else
                     {
-                        matrix[i][j] = random.Next(1, 11);
+                        matrix[i][j] = random.Next(5, 50);
                     }
                 }
             }

@@ -89,9 +89,9 @@ namespace PatchingATSP
                         }
                     }
 
-
                     cplex.SetParam(Cplex.Param.MIP.Strategy.Search, (int)Cplex.MIPSearch.Traditional); //heuristic
-                    
+
+
                     if (cplex.Solve())
                     {
 
@@ -102,16 +102,16 @@ namespace PatchingATSP
                         //Console.WriteLine("Optimal value = " + cplex.ObjValue);
                         //Console.WriteLine();
 
-                        for (int i = 0; i < n; i++)
-                        {
-                            for (int j = 0; j < n; j++)
-                            {
-                                if (x[i][j] != null && cplex.GetValue(x[i][j]) != 0)
-                                {
-                                    //Console.WriteLine($"x[{i}][{j}] = {cplex.GetValue(x[i][j])}");
-                                }
-                            }
-                        }
+                        //for (int i = 0; i < n; i++)
+                        //{
+                        //    for (int j = 0; j < n; j++)
+                        //    {
+                        //        if (x[i][j] != null && cplex.GetValue(x[i][j]) != 0)
+                        //        {
+                        //            Console.WriteLine($"x[{i}][{j}] = {cplex.GetValue(x[i][j])}");
+                        //        }
+                        //    }
+                        //}
 
                         return cplex.ObjValue;
 
